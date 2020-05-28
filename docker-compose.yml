@@ -53,10 +53,27 @@ services:
       args:
         SNAPCAST_VERSION: 0.19.0
     restart: on-failure 
-    network_mode: host 
+    network_mode: host
     privileged: true
     volumes:
       - snapcast:/var/cache/snapcast
+  samba:
+    build:
+      context: ./samba
+    environment:
+      NMBD: true
+      PERMISSIONS: true
+    ports:
+      - "137:137/udp"
+      - "138:138/udp"
+      - "139:139/tcp"
+      - "445:445/tcp"
+    tmpfs:
+      - /tmp
+    restart: on-failure
+    mem_limit: 512m
+    privileged: true
+    network_mode: host
 volumes:
   spotifycache:
   bluetoothcache:
