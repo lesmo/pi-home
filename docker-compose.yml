@@ -74,6 +74,14 @@ services:
     mem_limit: 512m
     privileged: true
     network_mode: host
+  upnp:
+    build: ./upnp
+    restart: on-failure 
+    network_mode: host 
+    ports:
+      - 49494:49494
+    volumes:
+      - snapcast:/var/cache/snapcast
 volumes:
   spotifycache:
   bluetoothcache:
