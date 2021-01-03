@@ -2,6 +2,7 @@ version: '2'
 
 volumes:
   spotifycache:
+  thelounge:
 
 services:
 
@@ -71,5 +72,6 @@ services:
     build:
       context: ./plugins/the-lounge
     ports:
-      - '9000:9000'
-    network_mode: 'host'
+      - '80:9000'
+    volumes:
+      - thelounge:/var/opt/thelounge

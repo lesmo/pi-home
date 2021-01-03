@@ -18,3 +18,8 @@ COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 ARG THELOUNGE_VERSION=4.2.0-pre.1
 RUN yarn --non-interactive --frozen-lockfile global add thelounge@${THELOUNGE_VERSION} && \
     yarn --non-interactive cache clean
+
+# Fix docker-entrypoint
+# https://github.com/docker-library/postgres/issues/296#issuecomment-308698059
+RUN chmod 777 /usr/local/bin/docker-entrypoint.sh \
+    && ln -s /usr/local/bin/docker-entrypoint.sh /
