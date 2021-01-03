@@ -1,4 +1,600 @@
 - commits:
+    - subject: 'docs: change to svg deploy with balena button'
+      hash: 3c341465bb403748b9bfdfd6e26221c0f273803d
+      body: |
+        change to svg logo
+      footer:
+        Closes: '#362'
+        closes: '#362'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <aaron@balena.io>
+        signed-off-by: Aaron Shaw <aaron@balena.io>
+      author: Aaron Shaw
+      nested: []
+    - subject: 'docs: add link to supported dacs'
+      hash: 36588938979480c360e54310702516bd12241a0b
+      body: |
+        add link to supported dacs
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <aaron@balena.io>
+        signed-off-by: Aaron Shaw <aaron@balena.io>
+      author: Aaron Shaw
+      nested: []
+    - subject: 'docs: add various dacs that have been tested'
+      hash: 99d2e7871ef6a168b554c35df684d4d2f926a12b
+      body: >
+        adds instructions for various dacs that have been tested to work with
+        balenaSound
+      footer:
+        Closes: '#345'
+        closes: '#345'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <aaron@balena.io>
+        signed-off-by: Aaron Shaw <aaron@balena.io>
+      author: Aaron Shaw
+      nested: []
+  version: 3.4.5
+  date: 2021-01-01T17:51:40.610Z
+- commits:
+    - subject: 'spotify: fix linear volume control issue'
+      hash: 21105d4664346f5e3a1e6260fe09da59ba8b5a5c
+      body: >
+        rasptify updated their librepsot debs to pull in the new changes in
+        librespot to move away from --linear-volume and to either
+        --mixer-linear-volume or --volume-ctrl linear. The latter seems to be
+        the preferred option judging by their latest docs update.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Connects-to: '#386'
+        connects-to: '#386'
+        Closes: '#386'
+        closes: '#386'
+        Signed-off-by: Aaron Shaw <aaron@balena.io>
+        signed-off-by: Aaron Shaw <aaron@balena.io>
+        Co-authored-by: wusala01 <nick.london94@gmail.com>
+        co-authored-by: wusala01 <nick.london94@gmail.com>
+      author: Aaron Shaw
+      nested: []
+  version: 3.4.4
+  date: 2020-12-31T16:55:50.168Z
+- commits:
+    - subject: 'docs: add iqaudio and JustBoom boards'
+      hash: 9ac3380462fb7bac17a4878a6c916b14f271cc4d
+      body: |
+        Add more tested JustBoom and iqaudio boards
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <shawaj@gmail.com>
+        signed-off-by: Aaron Shaw <shawaj@gmail.com>
+      author: Aaron Shaw
+      nested: []
+  version: 3.4.3
+  date: 2020-12-21T01:13:18.958Z
+- commits:
+    - subject: 'docs: Patch ALSA bridge install script'
+      hash: b85b466163620841a62f692f395b8490c5570f83
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.4.2
+  date: 2020-12-01T19:52:40.154Z
+- commits:
+    - subject: 'docs: Update multiroom image'
+      hash: 9b9a0dde1d8d66b7c22ffbf54068ae119af348f6
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.4.1
+  date: 2020-11-30T18:08:20.552Z
+- commits:
+    - subject: 'multiroom: update snapcast to v0.22 and various improvements'
+      hash: d3312c2f97a93e4a94c73ab1986965f7f7f8930c
+      body: >
+        - Update snapcast to v0.22.0-r0
+
+        - Replace FIFO stream source with ALSA which significantly reduces CPU
+        and I/O usage (fixes #294)
+
+        - Add SOUND_INPUT_LATENCY and SOUND_OUTPUT_LATENCY env vars (also helps
+        with #294)
+
+        - Reduce multiroom-server image with multi stage builds for a slimmer
+        image
+
+        - Reduce verbose level for both multiroom services
+      footer:
+        Connects-to: '#294'
+        connects-to: '#294'
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.4.0
+  date: 2020-11-27T19:37:19.895Z
+- commits:
+    - subject: Replace Unicode double quotes with ASCII double quotes in reference docs
+      hash: b4298883cad25f59d9b5d9fe4b3c0ba29cbdc1af
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Paulo Castro
+      nested: []
+  version: 3.3.1
+  date: 2020-11-27T16:59:10.139Z
+- commits:
+    - subject: Change deploy button to svg
+      hash: 24c6adddc00754adc721af78c84fbd73986c4d95
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Amit Solanki <amit@balena.io>
+        signed-off-by: Amit Solanki <amit@balena.io>
+      author: Amit Solanki
+      nested: []
+  version: 3.3.0
+  date: 2020-11-27T09:23:59.769Z
+- commits:
+    - subject: 'meta: fix up some docs typos'
+      hash: f6244f43f133ff14198aa929974cfaa6729f0055
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+      nested: []
+  version: 3.2.2
+  date: 2020-11-26T13:29:46.487Z
+- commits:
+    - subject: Add contract balena.yml and app logo (hub)
+      hash: 7a815002f52ccfb9d769641d9bd29d7eee55a965
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+  version: 3.2.1
+  date: 2020-11-25T11:48:44.928Z
+- commits:
+    - subject: 'multi-room: add snapweb to snapcast server'
+      hash: 7282d0e824a116877f4ffa1f34d02dc00b070219
+      body: |
+        This adds the simple web application snapweb to the snapcast server.
+        The application allows to set properties of snapcast (multiroom) client
+        such as volume
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: emmanuel.jannetti@gmail.com
+        signed-off-by: emmanuel.jannetti@gmail.com
+        Connects-to: '#319'
+        connects-to: '#319'
+      author: Emmanuel Jannetti
+      nested: []
+  version: 3.2.0
+  date: 2020-10-30T10:38:18.334Z
+- commits:
+    - subject: 'spotify: fix password woes'
+      hash: f62fd91f7f928d68b8825206526de8530a04bc69
+      body: |
+        - Fixes bug in 3.0 where user/pass was not working
+        - Fixes bug where passwords with a space did not work
+      footer:
+        Connects-to: '#131'
+        connects-to: '#131'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.11
+  date: 2020-10-28T20:02:10.222Z
+- commits:
+    - subject: >-
+        env vars: fix docs about some block env vars. Add
+        SOUND_DISABLE_BLUETOOTH.
+      hash: d369079ae2b71da992503be172d5aed0198b650f
+      body: ''
+      footer:
+        Connects-to: '#316, #337'
+        connects-to: '#316, #337'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.10
+  date: 2020-10-28T17:49:29.856Z
+- commits:
+    - subject: 'dwb: add balena.yml file to explicitly set env vars'
+      hash: 7338e30ca83fba36d70b5a7c395ff0ece503ad61
+      body: ''
+      footer:
+        Connects-to: '#324'
+        connects-to: '#324'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.9
+  date: 2020-10-19T17:49:49.592Z
+- commits:
+    - subject: 'dac: Add Boss DAC v1.2'
+      hash: 66378b989bff918081e96dc9c5ef6249d835d751
+      body: ''
+      footer:
+        Connects-to: '#305'
+        connects-to: '#305'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomasmigone@gmail.com>
+        signed-off-by: Tomás Migone <tomasmigone@gmail.com>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.8
+  date: 2020-10-19T15:43:59.833Z
+- commits:
+    - subject: 'docs: add query params to deploy link'
+      hash: a4f796504c95e1a39409e71b4e05960db46246cc
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <shawaj@gmail.com>
+        signed-off-by: Aaron Shaw <shawaj@gmail.com>
+      author: Aaron Shaw
+      nested: []
+  version: 3.1.7
+  date: 2020-10-01T12:51:10.309Z
+- commits:
+    - subject: 'dac: add Adafruit mac98357'
+      hash: fa62fccabafd19a7d4f8d9dd500b9d7850192444
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.6
+  date: 2020-09-25T20:23:05.306Z
+- commits:
+    - subject: 'Documentation: added clear links to help on the Getting Started page'
+      hash: 39688f703ed527018bbb21f58dd2c26312bda69c
+      body: ''
+      footer:
+        Connects-to: '#307'
+        connects-to: '#307'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Mark Chester <mark@chesterfamily.org>
+        signed-off-by: Mark Chester <mark@chesterfamily.org>
+      author: Mark Chester
+      nested: []
+  version: 3.1.5
+  date: 2020-09-25T18:53:20.081Z
+- commits:
+    - subject: >-
+        plugins: change restart policy to on-failure to avoid unnecessary
+        restarts
+      hash: 36e0b08a532914affd9e680af2d4dbc84827c1ca
+      body: ''
+      footer:
+        Connects-to: '#303'
+        connects-to: '#303'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.4
+  date: 2020-09-25T15:27:09.678Z
+- commits:
+    - subject: Open port 1705 for snapcast clients to control snapcast server.
+      hash: a4902aa9a689e043636c66a81f94b009545a3e69
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Mark Chester <mark@chestersgarage.com>
+        signed-off-by: Mark Chester <mark@chestersgarage.com>
+      author: Mark Chester
+      nested: []
+    - subject: Minor documentation tweaks
+      hash: 6b338e0acb4b8dbd6881171323246137b2f05f8a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: AlexProgrammerDE <40795980+AlexProgrammerDE@users.noreply.github.com>
+        signed-off-by: AlexProgrammerDE <40795980+AlexProgrammerDE@users.noreply.github.com>
+      author: AlexProgrammerDE
+      nested: []
+  version: 3.1.3
+  date: 2020-09-23T01:51:29.785Z
+- commits:
+    - subject: 'dac: add Hifiberry DAC2 HD'
+      hash: c2f2b7aa3347fe20ae571de6eafc016786c48d6f
+      body: ''
+      footer:
+        Connects-to: '#279'
+        connects-to: '#279'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.2
+  date: 2020-09-21T18:43:55.976Z
+- commits:
+    - subject: 'meta: Use balenablocks images instead of balenaplayground'
+      hash: dbc6f642518d4571c98df3ea59ae73a7df76c7ba
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.1
+  date: 2020-09-17T13:37:49.658Z
+- commits:
+    - subject: Update link in docs section of README
+      hash: 248d7da67f6288fdd9694b5a0c109c5027f288c8
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Anuj Deshpande <anuj@balena.io>
+        signed-off-by: Anuj Deshpande <anuj@balena.io>
+      author: Anuj Deshpande
+      nested: []
+  version: 3.1.0
+  date: 2020-09-17T13:10:46.917Z
+- commits:
+    - subject: Update logo dir in README
+      hash: fc9a34142561871f8ca128ba72fc90e137b3c3c6
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Amit Solanki <amit@balena.io>
+        signed-off-by: Amit Solanki <amit@balena.io>
+      author: Amit Solanki
+      nested: []
+  version: 3.0.1
+  date: 2020-09-16T19:43:28.568Z
+- commits:
+    - subject: 'balenaSound 3.0: use balena blocks'
+      hash: 61e50b3831c5065e06898fc17390572a893cc6d8
+      body: >
+        Refactor application to use audio and bluetooth balena blocks.
+
+
+        Notable changes:
+
+        - New plugin system for audio sources, easier to contribute.
+
+        - Uniform audio configuration and handling thanks to audio block
+        (volume, etc)
+
+        - Simultaneous audio source streaming
+
+        - USB soundcards supported out of the box
+
+        - Support for new boards: Intel NUC, Beaglebone Black, Jetson Nano
+
+        - Experimental: input via USB soundcard
+
+        - Experimental: secret UI to update config parameters
+
+
+        Co-author changelog:
+
+        - Spotify and UPnP plugins: AlexProgrammerDE
+
+        - Docs and landr: Andrew Nhem, Phil Wilson and Doron Behar
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+        Co-authored-by: Doron Behar <doron.behar@gmail.com>
+        co-authored-by: Doron Behar <doron.behar@gmail.com>
+      author: Tomás Migone
+      nested: []
+  version: 3.0.0
+  date: 2020-09-15T17:22:49.888Z
+- commits:
+    - subject: 'spotify: Environment variable to switch volume normalisation'
+      hash: bd335ca860eaf74ebf6c4fa2560b2cfe56e44acd
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Connects-to: '#267'
+        connects-to: '#267'
+      author: Florian
+      nested: []
+  version: 2.4.10
+  date: 2020-08-22T14:16:30.690Z
+- commits:
+    - subject: Fix snapcast bad signature error in rpi0 devices
+      hash: 3a6000498db555adc1e6c174674ffe503ca70fbd
+      body: ''
+      footer:
+        Connects-to: '#255'
+        connects-to: '#255'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 2.4.9
+  date: 2020-07-23T15:59:49.647Z
+- commits:
+    - subject: 'multiroom: use alpine based containers'
+      hash: a81f6f7d75d0d37b14927ea7b23bc29e80231d7c
+      body: |
+        - Reduce container size to 81MB (~60% smaller)
+        - Use edge repository for latest package versions
+        - Remove aarch64 dockerfiles, not needed anymore
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 2.4.8
+  date: 2020-07-22T16:21:19.622Z
+- commits:
+    - subject: Adding clarity to DAC section
+      hash: 9c3797940695bfa2bee2e66b2f453e195d5e7977
+      body: >
+        Specifying that DAC instructions need to be device-specific to device
+        using DAC and not fleet wide.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrewnhem
+      nested: []
+  version: 2.4.7
+  date: 2020-07-21T23:50:45.118Z
+- commits:
+    - subject: Adding clarification between config vars and env vars for users
+      hash: 94f129c48a4178a4d4246c990488fa56c7d6d8e7
+      body: >
+        Clarifying and citing resources for env var usage in balenaSound so
+        users
+
+        don't try to add env vars to config vars.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrewnhem
+      nested: []
+  version: 2.4.6
+  date: 2020-07-21T18:25:21.874Z
+- commits:
+    - subject: Fix rpi1/rpi2 bug with multiroom server
+      hash: b9356e7af85e4ee1c7ecbdf97eaa60da9b122123
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 2.4.5
+  date: 2020-07-21T17:51:29.530Z
+- commits:
+    - subject: 'multi-room: disable feature for raspberrypi2 fam'
+      hash: 6eebb0b756588d5c260d28ade9851c85e6c219e3
+      body: ''
+      footer:
+        Connects-to: '#220'
+        connects-to: '#220'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 2.4.4
+  date: 2020-07-17T20:07:26.332Z
+- commits:
+    - subject: Adding masterclass reference to balenaSound troubleshooting
+      hash: db5c34fffd837b2cf5ef600e2f1b3e7832e01769
+      body: >
+        Added section to /troubleshooting to reference and recommend taking
+        masterclasses.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrewnhem
+      nested: []
+  version: 2.4.3
+  date: 2020-07-13T17:54:02.882Z
+- commits:
+    - subject: 'docs: add troubleshooting case'
+      hash: d56f2a8c37cb6e1f707329c34c2e1035c975e351
+      body: |
+        No audio on Pi3 with balenaOS 64bits.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+    - subject: 'docs: Update device support citations so they don''t look as links'
+      hash: b6ae9c7792b733dfa5eec9f0fdb4500bd34e902f
+      body: ''
+      footer:
+        Connects-to: '#209'
+        connects-to: '#209'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+  version: 2.4.2
+  date: 2020-06-23T18:23:06.274Z
+- commits:
+    - subject: 'snapcast-client: Fix bug where snapcast client is not starting'
+      hash: 43d58e3194b8bab560aea81bb3cb3fb18e43faba
+      body: ''
+      footer:
+        Connects-to: '#211'
+        connects-to: '#211'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+  version: 2.4.1
+  date: 2020-06-08T13:12:16.325Z
+- commits:
     - subject: 'multi-room: add latency optional parameter to snapclient'
       hash: 0f4dddb0fd480ed47385c7552dc852df948def29
       body: |
