@@ -1,11 +1,11 @@
 version: "2"
-slug: "balena-sound"
-name: "balenaSound"
+slug: "lesmo-pihome"
+name: "lesmoPiHome"
 type: "sw.application"
 assets:
-  - url: "https://github.com/balenalabs/balena-sound"
+  - url: "https://github.com/lesmo/pi-home"
     name: "repository"
-  - url: "https://raw.githubusercontent.com/balenalabs/balena-sound/master/logo.png"
+  - url: "https://raw.githubusercontent.com/lesmo/pi-home/master/logo.png"
     name: "logo"
 data:
   description: "Build a single or multi-room streamer for an existing audio device using a Raspberry Pi! Supports Bluetooth, Airplay and Spotify Connect"
