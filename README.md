@@ -1,4 +1,4 @@
-![logo](https://raw.githubusercontent.com/balena-io-projects/balena-sound/master/docs/images/balenaSound-logo.png)
+# Lesmo's PiHome
 
 **My personal PiHome project on a Raspberry Pi using Balena OS.** It combines Spotify Connect, Pi Hole and The Lounge IRC projects into the same Raspberry Pi.
 
